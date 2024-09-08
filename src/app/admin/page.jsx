@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useAuth } from '../context/context';
 import toast from 'react-hot-toast';
 
-export default function page() {
+export default function Page() {
   const { address, loggedIn, state } = useAuth();
   const { contract } = state;
   const [clientAddress, setClientAddress] = useState('')

@@ -5,7 +5,7 @@ import qrCode from 'qrcode'
 import { useAuth } from '../context/context';
 import toast from 'react-hot-toast';
 
-export default function page() {
+export default function Page() {
   const { state, address, loggedIn } = useAuth();
   const { contract } = state;
   const [productID, setProductID] = useState("");
